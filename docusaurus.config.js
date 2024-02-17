@@ -16,7 +16,7 @@ const config = {
   url: "https://your-docusaurus-site.example.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/extra-disk/docs/build",
+  baseUrl: "/docs/build",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -54,9 +54,7 @@ const config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: [
-            "./src/css/custom.css",
-          ],
+          customCss: ["./src/css/custom.css"],
         },
       }),
     ],
@@ -72,7 +70,7 @@ const config = {
       // Replace with your project's social card
       image: "img/docusaurus-social-card.jpg",
       docs: {
-        sidebar: { autoCollapseCategories: true }
+        sidebar: { autoCollapseCategories: true },
       },
       // serach: {
       //   search: true,
@@ -152,9 +150,9 @@ const config = {
             title: "More",
             items: [
               {
-                label: 'hello',
-                href: '/'
-              }
+                label: "hello",
+                href: "/",
+              },
             ],
           },
         ],
