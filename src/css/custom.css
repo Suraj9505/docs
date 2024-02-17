@@ -1,0 +1,266 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #000000;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --font-colors: #ffffff;
+  --menu-hover: #252525;
+  --card-border: #dddddd;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-bg: #ffffff;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #ffffff;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --font-colors: #000000;
+  --menu-hover: #ddd1d1;
+  --card-border: #2e2e2e;
+  --card-shadow: rgba(255, 255, 255, 0.1);
+  --card-bg: #252525;
+}
+
+a {
+  color: var(--font-colors)
+}
+
+a h2,
+a div,
+.hash-link {
+  color: var(--ifm-color-primary) !important;
+}
+
+.img-logo {
+  width: 20%;
+  height: 20%;
+}
+
+.item-inner img {
+  width: 40%;
+}
+
+.navbar--fixed-top {
+  position: sticky !important;
+  padding: 0 20px;
+}
+
+.navbar__link,
+.navbar__item--active .navbar__link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: none;
+}
+
+.dropdown__menu {
+  padding: 0;
+}
+
+.dropdown__menu a {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown__link {
+  color: inherit;
+  text-decoration: none;
+  margin-top: 0;
+}
+
+.dropdown__link:hover {
+  color: var(--font-colors);
+  background-color: var(--ifm-color-primary);
+}
+
+.dropdown__link--active {
+  background-color: var(--ifm-color-primary);
+  color: var(--font-colors);
+}
+
+.menu__link,
+.breadcrumbs__link,
+.pagination-nav__link,
+.table-of-contents__link,
+.card {
+  text-decoration: none;
+}
+
+.menu__link:hover,
+.menu__list-item-collapsible:hover {
+  text-decoration: none;
+  background-color: var(--ifm-color-primary) !important;
+  color: var(--font-colors);
+}
+
+.menu__link--active,
+.menu__list-item-collapsible .menu__link--active {
+  background-color: var(--ifm-color-primary) !important;
+  color: var(--font-colors) !important;
+}
+
+[aria-expanded="true"] {
+  background-color: var(--ifm-color-primary) !important;
+  color: var(--font-colors);
+}
+
+h1 {
+  margin-bottom: 0.5rem !important;
+}
+
+.text--truncate {
+  margin-bottom: 0;
+}
+
+.padding--lg p {
+  display: none !important;
+}
+
+.release_date {
+  font-size: 0.8rem;
+  background-color: rgba(13, 110, 253, 1);
+}
+
+.text-small h3 {
+  font-size: 1.4rem;
+}
+
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.custom-card {
+  width: 350px;
+  margin: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--card-shadow);
+}
+
+.version-card .custom-card {
+  width: 200px;
+}
+
+.version-card img {
+  object-fit: contain;
+  width: 200px;
+  overflow: hidden;
+  height: 100% !important;
+}
+
+.center {
+  justify-content: center;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 1rem
+}
+
+.pt-4 {
+  padding-top: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+.ms-2 {
+  margin-left: 0.5rem;
+}
+
+.ms-3 {
+  margin-left: 1rem
+}
+
+.me-1 {
+  margin-right: .25rem;
+}
+
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.custom-card p {
+  margin-bottom: 0;
+}
+
+.custom-card img {
+  object-fit: contain;
+  width: 200px;
+  overflow: hidden;
+  height: 5rem;
+}
+
+.custom-card a {
+  color: var(--ifm-color-primary)
+}
+
+.title-logo {
+  width: 300px;
+  margin-top: 1rem;
+  object-fit: cover;
+}
+
+.dark-logo {
+  display: none;
+}
+
+[data-theme='dark'] .dark-logo {
+  display: block;
+}
+
+[data-theme='dark'] .light-logo {
+  display: none;
+}

@@ -1,0 +1,110 @@
+---
+sidebar_position: 1
+---
+
+# ApexCharts
+
+<hr />
+
+_ApexCharts is a feature-rich JavaScript charting library that allows you to create interactive and visually appealing charts for your web applications. It is built on top of the popular charting library, [<font color="#FF971D">Chart.js</font>](https://www.chartjs.org/), and provides additional customization options and advanced features._
+
+<div className="mt-3 text-small">
+### Features
+</div>
+
+- **Interactive Charts:** _ApexCharts enables users to interact with charts by providing features like zooming, panning, and real-time updates._
+
+- **Wide Range of Chart Types:** _It supports various chart types, including line charts, bar charts, area charts, pie charts, and more._
+
+- **Responsive Design:** _Charts created with ApexCharts are responsive, ensuring a consistent and optimal viewing experience across different devices._
+
+- **Easy to Customize:** _ApexCharts provides a plethora of customization options, allowing you to control every aspect of the chart's appearance and behavior._
+
+- **Dynamic Data:** _You can easily update chart data dynamically, making it suitable for applications that require real-time data visualization._
+
+<div className="mt-3 text-small">
+### Getting Started
+</div>
+_To use ApexCharts in your project, follow these steps:_
+
+1.  **Installation:** _Include the ApexCharts library in your project, either by using a package manager like npm or yarn, or by including the necessary CDN links._
+
+    We can install Apexchart from NPM
+
+    ```npm
+    npm install apexchart
+    ```
+
+    **Usage**
+
+    ```javascript
+    import ApexCharts from "apexcharts";
+    ```
+
+    **OR**
+
+    _You can directly include the `<script>`._
+
+    ```html
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    ```
+
+2.  **HTML Markup:** _Create an HTML element where you want the chart to be rendered._
+
+    ```html
+    <div id="chart"></div>
+    ```
+
+3.  **Initialization:** _Initialize ApexCharts with your data and configuration._
+
+    ```javascript
+    var options = {
+      chart: {
+        type: "line",
+      },
+      series: [
+        {
+          name: "Sales",
+          data: [30, 40, 35, 50, 49, 60, 70, 91, 125],
+        },
+      ],
+    };
+
+    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+    ```
+
+4.  **Customization:** _Explore various customization options provided by ApexCharts to modify the appearance and behavior of your charts._
+
+    ```javascript
+    var options = {
+      chart: {
+        type: "bar",
+        height: 350,
+      },
+      plotOptions: {
+        bar: {
+          horizontal: false,
+          columnWidth: "55%",
+          endingShape: "rounded",
+        },
+      },
+      dataLabels: {
+        enabled: false,
+      },
+      stroke: {
+        show: true,
+        width: 2,
+        colors: ["transparent"],
+      },
+      // Add more options as needed
+    };
+    ```
+
+**_More Details_**
+
+_For detailed documentation, configuration options, and advanced usage, refer to the [<font color="#FF971D">**official ApexCharts documentation**</font>](https://apexcharts.com/docs/installation/)._
+
+**_Examples_**
+
+_Explore the [<font color="#FF971D">**ApexCharts demos**</font>](https://apexcharts.com/javascript-chart-demos/) for interactive examples showcasing the library's capabilities._
